@@ -1,0 +1,93 @@
+.profile_card{
+    width: 300px;
+    height: full;
+    background-color: black;
+    position: fixed;
+    right: 1px;
+    top: 51px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: monospace;
+    padding-bottom: 30px;
+}
+.profile_profilepic{
+    border: 1px solid white;
+    width : 180px;
+    border-radius: 50%;
+}
+
+.profilecard_info{
+margin-top: 1rem;
+font-size: larger;
+}
+
+.profilecard_edit{
+    border: 0;
+    width: 80px;
+    margin-top: 1rem;
+    font-family: monospace;
+    height: 1.2rem;
+    font-size: .8rem;
+    
+}
+
+.profilecard_edit:hover{
+    height: 1.5rem;
+    font-size: 1rem;
+    width: 90px;
+    cursor: pointer;
+}
+.profilecard_delete{
+    border: 0;
+    width: 110px;
+    margin-top: 1rem;
+    font-family: monospace;
+    height: 1.2rem;
+    font-size: .8rem;
+    
+}
+
+.profilecard_delete:hover{
+    height: 1.5rem;
+    font-size: 1rem;
+    width: 120px;
+    cursor: pointer;
+}
+
+.profile_close{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: .2rem;
+    width: 15px;
+    text-align: center;
+    margin-left: 260px;
+}
+
+@media screen and (max-width : 900px){
+    
+    .profile_card{
+        /* left: 20%;
+         top: 30%; */
+         position: relative;
+         border: 2px solid white;
+    }
+    .profile{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 4;
+        background-color:  rgba(0, 0, 0, 0.9);
+    }
+    
+}
+
+
+

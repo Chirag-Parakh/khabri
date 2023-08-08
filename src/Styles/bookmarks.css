@@ -1,0 +1,57 @@
+.bookmarks_page{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);;
+    width: 100vw;
+    height: 100%;
+    padding: 1rem;
+
+}
+.bookmarks_heading{
+    width: 100%;
+    text-align: center;
+}
+.bookmarks_close{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 3px;
+}
+.bookmarks_main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.bookmarks_card{
+    width: 280px;
+    height: 270px;
+    border: 1px solid white;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+}
+.bookamrks_delete{
+    text-align: right;
+    padding: .2rem;
+}
+.bookmarks_image{
+    border-radius: 1rem;
+}
+.scrollable-container{
+    height: 100%;
+    overflow: auto;
+}
+.bookmarks_title{
+    margin: .3rem;
+    font-family: monospace;
+    font-size: .9rem;
+}
+.bookmarks_source{
+    font-family: monospace;
+    font-size: .7rem;
+    text-align: right;
+}
