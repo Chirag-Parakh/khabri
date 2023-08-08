@@ -17,10 +17,7 @@ export default function App() {
     useEffect(() => {
         const fetchdata = async () => {
             try {
-                const proxyurl = "https://cors-anywhere.herokuapp.com/"
-                const url = `${proxyurl}https://newsapi.org/v2/top-headlines?q=${search}&apiKey=bee6b861d1034e998290d0edd7bf7a5b`
-                const request = Request (url)
-                const api_data = await fetch(request)
+                const api_data = await fetch(`https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?q=${search}&apiKey=bee6b861d1034e998290d0edd7bf7a5b`)
                 const api_json = await api_data.json();
                 setData(api_json.articles);
                 console.log(api_json);
