@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { HiOutlineLogin } from 'react-icons/hi';
 import user from './assets/user.jpeg'
 
-export default function Logincard({ showLoginCard }) {
+export default function Logincard() {
 
   const [profilepicurl, setProfilepicurl] = useState(null)
   const [showlogin, setShowlogin] = useState(false)
@@ -105,7 +105,7 @@ export default function Logincard({ showLoginCard }) {
               onChange={handleprofilepic}
             />
 
-            <input type="submit" value="Save" className='signin_button' onClick={setTimeout(() => {showLoginCard()}, 1000)}/>
+            <input type="submit" value="Save" className='signin_button' />
           </form>
         </div>
       </div>

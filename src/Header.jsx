@@ -9,10 +9,10 @@ function Header({ onsearchChange }) {
   const handleSearch = (topic) => {
     onsearchChange(topic);
   }
-  const [showLoginCard, setShowLoginCard] = useState(false)
-  const handleShowLoginCard = () => {
-    setShowLoginCard(prevState => !prevState)
-  }
+  // const [showLoginCard, setShowLoginCard] = useState(false)
+  // const handleShowLoginCard = () => {
+  //   setShowLoginCard(prevState => !prevState)
+  // }
 
   
   const profile = localStorage.getItem('userinfo')
@@ -39,7 +39,7 @@ function Header({ onsearchChange }) {
         </div>
       <div className={`header_topics ${showMenu ? 'change' : ''}`}>
         <ul className={`topics_list ${showMenu ? 'change' : ''}`}>
-          <h1 className='categories'>Categories: </h1>
+          <h1 className='categories'>Categories:</h1>
           <li className="topic_items" onClick={() => handleSearch("world")}> World</li>
           <li className="topic_items" onClick={() => handleSearch("india")}> India</li>
           <li className="topic_items" onClick={() => handleSearch("ai")}>  AI</li>
@@ -53,10 +53,10 @@ function Header({ onsearchChange }) {
           <li className="topic_items" onClick={() => handleSearch("sports")}> <Bookmarks /></li>
         </ul>
         <div className="header_icon">
-            {showLoginCard ?
+            {profilepicURL ?
               <Profile  /> 
               :
-              <Logincard  showLoginCard= {handleShowLoginCard}/>
+              <Logincard />
 }
         </div>
       </div>
